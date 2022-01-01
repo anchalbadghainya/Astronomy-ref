@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>space</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  </head>
+  <body>
+
+    <header>
+      <a href="#" class="brand">Astronomy</a>
+      <div class="menu-btn"></div>
+      <div class="navigation">
+        <div class="navigation-items">
+          <a href="#">Home</a>
+          <a href="planet_page.html">Planets</a>
+          <a href="star.html">Stars</a>
+          <a href="astroid.html">Asteroids, Comets & Meteors</a>
+          <a href="contact.php">  Queries</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="home">
+      <video class="video-slide active" src="videos/11b.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="videos/2.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="videos/1a.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="videos/5.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="videos/3.mp4" autoplay muted loop></video>
+      <div class="content active">
+        <h1>Wonderful.<br><span>universe</span></h1>
+        <p>"The cosmos is all that is or ever was or ever will be. Our feeblest contemplations 
+          of the Cosmos stir us—there is a tingling in the spine, a catch in the voice, a faint 
+          sensation, as if a distant memory, or falling from a height. We know we are approaching 
+          the greatest of mysteries."<br>
+          <br><br>
+          - Carl Sagan, Astronomer</p>
+        <!-- <a href="#">Read More</a> -->
+      </div>
+      <div class="content">
+        <h1>The Earth.<br><span>our planet</span></h1>
+        <p>Earth is the third planet from the Sun and the only astronomical object known to harbour and support
+           life. 29.2% of Earth's surface is land consisting of continents and islands. The remaining 70.8% is covered
+            with water, mostly by oceans, seas, gulfs, and other salt-water bodies, but also by lakes, rivers, and other 
+          freshwater, which together constitute the hydrosphere. Much of Earth's polar regions is covered in ice.</p>
+
+        <a href="earth.html">Read More</a>
+      </div>
+      <div class="content">
+        <h1>The Stars<br><span></span></h1>
+        <p>A star is an astronomical object consisting of a luminous spheroid of plasma held together by its
+           own gravity. The nearest star to Earth is the Sun. Many other stars are visible to the naked eye at 
+           night, but due to their immense distance from Earth they appear as fixed points of light in the sky.
+          The most prominent stars are grouped into constellations and asterisms, and many of the brightest stars
+           have proper names.The observable universe contains an estimated 1022 to 1024 stars but most are invisible to 
+          the naked eye from Earth, including all individual stars outside our galaxy, the Milky Way.</p>      
+        <a href="star.html">Read More</a>
+      </div>
+      <div class="content">
+        <h1>The Planets<br><h2>Terrestrial and Jovian Objects</h2><br></h1>
+        <p>A planet is an astronomical body orbiting a star or stellar remnant that is massive enough to be 
+          rounded by its own gravity, is not massive enough to cause thermonuclear fusion, and – according to 
+          the International Astronomical 
+          Union but not all planetary scientists – has cleared its neighbouring region of planetesimals.</p>       
+        <a href="planet_page.html">Read More</a>
+      </div>
+      <div class="content">
+        <h1>ASTROIDES<br><span><h6>minor planets</h6></span></h1>
+        <p>Asteroids, sometimes called minor planets, are rocky,airless remnants left over from the early
+           formation of our solar system about 4.6 billion years ago.
+           Most of this ancient space rubble can be found orbiting our Sun between Mars and Jupiter within
+            the main asteroid belt. Asteroids range in size from Vesta – the largest at about 329 miles 
+            (530 kilometers) in diameter – to bodies that are less than 33 feet (10 meters) across.
+            The total mass of all the asteroids combined is less than that of Earth's Moon.
+          </p>        
+        <a href="astroid.html">Read More</a>
+      </div>
+      <div class="media-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="slider-navigation">
+        <div class="nav-btn active"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+      </div>
+    </section>
+
+    <script type="text/javascript">
+    //Javacript for responsive navigation menu
+    const menuBtn = document.querySelector(".menu-btn");
+    const navigation = document.querySelector(".navigation");
+
+    menuBtn.addEventListener("click", () => {
+      menuBtn.classList.toggle("active");
+      navigation.classList.toggle("active");
+    });
+
+    //Javacript for video slider navigation
+    const btns = document.querySelectorAll(".nav-btn");
+    const slides = document.querySelectorAll(".video-slide");
+    const contents = document.querySelectorAll(".content");
+
+    var sliderNav = function(manual){
+      btns.forEach((btn) => {
+        btn.classList.remove("active");
+      });
+
+      slides.forEach((slide) => {
+        slide.classList.remove("active");
+      });
+
+      contents.forEach((content) => {
+        content.classList.remove("active");
+      });
+
+      btns[manual].classList.add("active");
+      slides[manual].classList.add("active");
+      contents[manual].classList.add("active");
+    }
+
+    btns.forEach((btn, i) => {
+      btn.addEventListener("click", () => {
+        sliderNav(i);
+      });
+    });
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercury</title>
+    <link rel="stylesheet" href="splanets.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+
+    <section class="sec-01">
+      <div class="container">
+        <h2 class="main-title">Mercury</h2>
+        <div class="content">
+          <div class="image">
+            <img src="images/mec1.jpg" alt="">
+          </div>
+          <div class="text-box">
+            <h3>Overview</h3>
+            <p>The smallest planet in our solar system and nearest to 
+                the Sun, Mercury is only slightly larger than Earth's Moon.
+                From the surface of Mercury, the Sun would appear more than three 
+                times as large as it does when viewed from Earth, and the sunlight
+                 would be as much as seven times brighter. Despite its proximity to 
+                 the Sun, Mercury is not the hottest planet in our solar
+                 system – that title belongs to nearby Venus, thanks to its dense atmosphere.</p>
+          </div>
+        </div>
+        <div class="media-icons">
+          <a  class="icon"><i class="far fa-grin-stars"></i></a>
+          <a  class="icon"><i class="far fa-grin-stars"></i></a>
+          <a  class="icon"><i class="far fa-grin-stars"></i></a>
+          <a  class="icon"><i class="far fa-grin-stars"></i></a>
+        </div>
+      </div>
+    </section>
+    <section class="sec-02">
+      <div class="container">
+        <h3 class="section-title">The smallest planet in our solar system</h3>
+        <div class="content">
+          <div class="image">
+            <img src="images/mec2.jpg" alt="">
+          </div>
+          <div class="info">
+            <h4 class="info-title">Description</h4>
+            <p>A year on Mercury is just 88 days long.
+                One solar day (the time from noon tonoon on the planet’s surface) on Mercury 
+                lasts the equivalent of 176 Earth dayswhile the sidereal day (the time for 1 
+                rotation in relation to a fixed point) lasts59 Earth days. Mercury is nearly 
+                tidally locked to the Sun and over time this has slowed the rotation of the planet 
+                to almost match its orbit around the Sun. Mercury also has the highest orbital
+                 eccentricity of all the planets with its distance from the Sun ranging from 46 to 70
+                  million km.<br><br>
+                 Even though the planet is small, Mercury is very dense. Each cubic centimetre has a density 
+                 of 5.4 grams,
+                  with only the Earth having a higher density.
+                  This is largely due to Mercury being composed mainly of heavy metals and rock.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec-03">
+      <div class="container">
+        <h3 class="section-title">Facts about Mercury</h3>
+        <div class="content">
+          <div class="media-info">
+            <li><a ><i class="far fa-star"></i> Mercury does not have any moons or rings.</a></li>
+            <li><a ><i class="far fa-star"></i> A year on Mercury takes 88 Earth days.</a></li>
+            <li><a ><i class="far fa-star"></i> Mercury is the second densest planet.</a></li>
+            <li><a ><i class="far fa-star"></i> Mercury is only the second hottest planet.</a></li>
+            <li><a ><i class="far fa-star"></i> Mercury is named for the Roman messenger to the gods.</a></li>
+          </div>
+          <div class="image">
+            <img src="images/mec3.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      //common reveal options to create reveal animations
+      ScrollReveal({
+        //reset: true,
+        distance: '60px',
+        duration: 2500,
+        delay: 400
+      });
+
+      //target elements, and specify options to create reveal animations
+      ScrollReveal().reveal('.main-title, .section-title', { delay: 500, origin: 'left' });
+      ScrollReveal().reveal('.sec-01 .image, .info', { delay: 600, origin: 'bottom' });
+      ScrollReveal().reveal('.text-box', { delay: 700, origin: 'right' });
+      ScrollReveal().reveal('.media-icons i', { delay: 500, origin: 'bottom', interval: 200 });
+      ScrollReveal().reveal('.sec-02 .image, .sec-03 .image', { delay: 500, origin: 'top' });
+      ScrollReveal().reveal('.media-info li', { delay: 500, origin: 'left', interval: 200 });
+    </script>
+
+  </body>
+</html>
+      

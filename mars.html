@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mars</title>
+    <link rel="stylesheet" href="splanets.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+
+    <section class="sec-01">
+      <div class="container">
+        <h2 class="main-title">Mars</h2>
+        <div class="content">
+          <div class="image">
+            <img src="images/smar2.jpg" alt="">
+          </div>
+          <div class="text-box">
+            <h3>Overview</h3>
+            <p>Mars is the fourth planet from the Sun – a dusty, cold, desert world with a 
+                very thin atmosphere. Mars is also a dynamic planet with seasons, 
+                polar ice caps, canyons, extinct volcanoes, and evidence that it was even more active in the past.
+                Mars is one of the most explored bodies in our solar system, and it's the only planet where we've 
+                sent rovers to roam the alien landscape.</p>
+          </div>
+        </div>
+        <div class="media-icons">
+          <a  class="icon"><i class="far fa-grin-stars"></i></a>
+          <a  class="icon"><i class="far fa-grin-stars"></i></a>
+          <a  class="icon"><i class="far fa-grin-stars"></i></a>
+          <a  class="icon"><i class="far fa-grin-stars"></i></a>
+        </div>
+      </div>
+    </section>
+    <section class="sec-02">
+      <div class="container">
+        <h3 class="section-title">The Red Planet</h3>
+        <div class="content">
+          <div class="image">
+            <img src="images/smar4.jpg" alt="">
+          </div>
+          <div class="info">
+            <h4 class="info-title">Description</h4>
+            <p>Mars and Earth have approximately the same landmass.
+                Even though Mars has only 15% of the Earth’s volume and just over 10% of 
+                the Earth’s mass, around two thirds of the Earth’s surface is covered in water.
+                 Martian surface gravity is only 37% of the Earth’s (meaning you could leap 
+                 nearly three times higher on Mars).
+                <br>he ancient Greeks called the planet Ares, after their god of war; the Romans 
+                then did likewise, associating the planet’s blood-red colour with Mars, their own
+                 god of war. Interestingly, other ancient cultures also focused on colour – to China’s 
+                 astronomers it was ‘the fire star’, whilst Egyptian priests called on ‘Her Desher’, or
+                  ‘the red one’.
+                 The red colour Mars is known for is due to the rock and dust covering its surface being 
+                 rich in iron.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec-03">
+      <div class="container">
+        <h3 class="section-title">Facts about Mars</h3>
+        <div class="content">
+          <div class="media-info">
+            <li><a ><i class="far fa-star"></i> Mars and Earth have approximately the same landmass.</a></li>
+            <li><a ><i class="far fa-star"></i> Mars is home to the tallest mountain in the solar system.</a></li>
+            <li><a ><i class="far fa-star"></i> Mars has the largest dust storms in the solar system.</a></li>
+            <li><a ><i class="far fa-star"></i> On Mars the Sun appears about half the size as it does on Earth.</a></li>
+            <li><a ><i class="far fa-star"></i> Mars takes its name from the Roman god of war.</a></li>
+          </div>
+          <div class="image">
+            <img src="images/smar5.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      //common reveal options to create reveal animations
+      ScrollReveal({
+        //reset: true,
+        distance: '60px',
+        duration: 2500,
+        delay: 400
+      });
+
+      //target elements, and specify options to create reveal animations
+      ScrollReveal().reveal('.main-title, .section-title', { delay: 500, origin: 'left' });
+      ScrollReveal().reveal('.sec-01 .image, .info', { delay: 600, origin: 'bottom' });
+      ScrollReveal().reveal('.text-box', { delay: 700, origin: 'right' });
+      ScrollReveal().reveal('.media-icons i', { delay: 500, origin: 'bottom', interval: 200 });
+      ScrollReveal().reveal('.sec-02 .image, .sec-03 .image', { delay: 500, origin: 'top' });
+      ScrollReveal().reveal('.media-info li', { delay: 500, origin: 'left', interval: 200 });
+    </script>
+
+  </body>
+</html>
+      

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asteroids, Comets & Meteors</title>
+    <link rel="stylesheet" href="splanets.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+
+    <section class="sec-01">
+      <div class="container">
+        <h2 class="main-title">Asteroids</h2>
+        <div class="content">
+          <div class="image">
+            <img src="images/asto2.jpg" alt="">
+          </div>
+          <div class="text-box">
+            <h3>About</h3>
+            <p>Asteroids are small, rocky solar system bodies that populate interplanetary 
+                space out to the orbit of Jupiter. There are millions of them, and they are often 
+                grouped by their composition. The planetary science community refers to them as minor 
+                planets, a general term applied to solar system bodies smaller than moons.
+                 Asteroids are mainly made of materials left over from the formation of the inner solar system words. </p>
+          </div>
+        </div>
+        <div class="media-icons">
+          <a  class="icon"><i class="far fa-grin-stars"></i></a>
+          <a  class="icon"><i class="far fa-grin-stars"></i></a>
+          <a  class="icon"><i class="far fa-grin-stars"></i></a>
+          <a  class="icon"><i class="far fa-grin-stars"></i></a>
+        </div>
+      </div>
+    </section>
+    <section class="sec-02">
+      <div class="container">
+        <h3 class="section-title"> Comets & Meteors </h3>
+        <div class="content">
+          <div class="image">
+            <img src="images/come2.jpg" alt="">
+          </div>
+          <div class="info">
+            <h4 class="info-title">Description</h4>
+            <p>A comet is a very small solar system body made mostly of ices mixed with 
+                smaller amounts of dust and rock. Most comets are no larger than a few kilometres across. 
+                The main body of the comet is called the nucleus, and it can contain water, methane, 
+                nitrogen and other ices.<br>
+                A meteor shower occurs when a number of meteors flash seem to radiate (or shoot out from)
+                 the same point in the sky.  They are usually named for the constellation in which their radiant appears.
+                   The meteoroids in a shower usually come from the trail of debris left behind by a comet.
+                    In the case of the Geminids and Quadrantids, those meteor showers come from the debris 
+                    scatted by orbiting asteroids. When Earth’s orbit
+                intersects the dust trail, we see more meteors flaring as the cometary debris encounters our planet’s 
+                atmosphere.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec-03">
+      <div class="container">
+        <h3 class="section-title">Facts about Asteroids, Comets & Meteors</h3>
+        <div class="content">
+          <div class="media-info">
+            <li><a ><i class="far fa-star"></i>Meteors fall to Earth during the day, although we can’t see them.</a></li>
+            <li><a ><i class="far fa-star"></i> The nucleus of a comet is made of ice and can be as small as a few meters 
+                across to giant boulders a few kilometres across.</a></li>
+            <li><a ><i class="far fa-star"></i> Many comets formed in the Oort Cloud and Kuiper Belts,
+                 two of the outermost regions of the solar system.</a></li>
+            <li><a ><i class="far fa-star"></i> Asteroids are rich in precious metals and other metals, as well as water.
+            </a></li>
+            <li><a ><i class="far fa-star"></i> Some asteroids have moons of their own!</a></li>
+          </div>
+          <div class="image">
+            <img src="images/come1.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <script>
+      //common reveal options to create reveal animations
+      ScrollReveal({
+        //reset: true,
+        distance: '60px',
+        duration: 2500,
+        delay: 400
+      });
+
+      //target elements, and specify options to create reveal animations
+      ScrollReveal().reveal('.main-title, .section-title', { delay: 500, origin: 'left' });
+      ScrollReveal().reveal('.sec-01 .image, .info', { delay: 600, origin: 'bottom' });
+      ScrollReveal().reveal('.text-box', { delay: 700, origin: 'right' });
+      ScrollReveal().reveal('.media-icons i', { delay: 500, origin: 'bottom', interval: 200 });
+      ScrollReveal().reveal('.sec-02 .image, .sec-03 .image', { delay: 500, origin: 'top' });
+      ScrollReveal().reveal('.media-info li', { delay: 500, origin: 'left', interval: 200 });
+    </script>
+
+  </body>
+</html>
+      

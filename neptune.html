@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neptune</title>
+    <link rel="stylesheet" href="splanets.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+
+    <section class="sec-01">
+      <div class="container">
+        <h2 class="main-title">Neptune</h2>
+        <div class="content">
+          <div class="image">
+            <img src="images/snep3.jpg" alt="">
+          </div>
+          <div class="text-box">
+            <h3>Overview</h3>
+            <p>Neptune is the eighth planet from the Sun, making it the most distant in the solar
+                 system. This gas giant may have formed much closer to the 
+                Sun in the early solar system history before migrating out to its current position. <br>
+                Dark, cold, and whipped by supersonic winds, ice giant Neptune 
+                is the eighth and most distant planet in our solar system.t is not visible to the 
+                naked eye and was first observed in 1846. Its position was 
+                determined using mathematical predictions. It was named after the Roman god of the sea.</p>
+          </div>
+        </div>
+        <div class="media-icons">
+          <a  class="icon"><i class="far fa-grin-stars"></i></a>
+          <a  class="icon"><i class="far fa-grin-stars"></i></a>
+          <a  class="icon"><i class="far fa-grin-stars"></i></a>
+          <a  class="icon"><i class="far fa-grin-stars"></i></a>
+        </div>
+      </div>
+    </section>
+    <section class="sec-02">
+      <div class="container">
+        <h3 class="section-title">The blue planet in our solar system</h3>
+        <div class="content">
+          <div class="image">
+            <img src="images/snep2.jpg" alt="">
+          </div>
+          <div class="info">
+            <h4 class="info-title">Description</h4>
+            <p>Despite being smaller than Uranus, Neptune has a greater mass.
+                 Below its heavy atmosphere, Uranus is made of layers of hydrogen, helium, and methane gases.
+                 They enclose a layer of water, ammonia and methane ice. The inner core of the planet is made
+                  of rock.The methane absorbs red light, which makes the planet appear a lovely blue. 
+                 High, thin clouds drift in the upper atmosphere. <br>The most interesting moon is Triton, a
+                  frozen world that is spewing nitrogen ice and dust particles out from below its surface. 
+                  It was likely captured by the gravitational pull of Neptune.
+                  It is probably the coldest world in the solar system.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec-03">
+      <div class="container">
+        <h3 class="section-title">Facts about Mercury</h3>
+        <div class="content">
+          <div class="media-info">
+            <li><a ><i class="far fa-star"></i> Neptune has a very thin collection of rings.</a></li>
+            <li><a ><i class="far fa-star"></i> Neptune spins on its axis very rapidly.</a></li>
+            <li><a ><i class="far fa-star"></i> Neptune has 14 moons.</a></li>
+            <li><a ><i class="far fa-star"></i> Neptune is named after the Roman god of the sea.</a></li>
+            <li><a ><i class="far fa-star"></i> The atmosphere of Neptune is made of hydrogen and helium, with some methane.</a></li>
+          </div>
+          <div class="image">
+            <img src="images/snep4.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      //common reveal options to create reveal animations
+      ScrollReveal({
+        //reset: true,
+        distance: '60px',
+        duration: 2500,
+        delay: 400
+      });
+
+      //target elements, and specify options to create reveal animations
+      ScrollReveal().reveal('.main-title, .section-title', { delay: 500, origin: 'left' });
+      ScrollReveal().reveal('.sec-01 .image, .info', { delay: 600, origin: 'bottom' });
+      ScrollReveal().reveal('.text-box', { delay: 700, origin: 'right' });
+      ScrollReveal().reveal('.media-icons i', { delay: 500, origin: 'bottom', interval: 200 });
+      ScrollReveal().reveal('.sec-02 .image, .sec-03 .image', { delay: 500, origin: 'top' });
+      ScrollReveal().reveal('.media-info li', { delay: 500, origin: 'left', interval: 200 });
+    </script>
+
+  </body>
+</html>
+      

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earth</title>
+    <link rel="stylesheet" href="splanets.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+
+    <section class="sec-01">
+      <div class="container">
+        <h2 class="main-title">Earth</h2>
+        <div class="content">
+          <div class="image">
+            <img src="images/sear4.jpg" alt="">
+          </div>
+          <div class="text-box">
+            <h3>Overview</h3>
+            <p>Our home planet is the third planet from the Sun, 
+                and the only place we know of so far that’s inhabited by living things. <br>
+                While Earth is only the fifth largest planet in the solar system, it is the only 
+                world in our solar system with 
+                liquid water on the surface. Just slightly larger than nearby Venus, Earth is the
+                 biggest of the four planets closest to the Sun, all of which are made of rock and metal.
+                 <br>
+                The name Earth is at least 1,000 years old. All of the planets, except for Earth, 
+                were named after Greek and Roman gods and goddesses. However, the name Earth is a 
+                Germanic word, which simply means “the ground.”</p>
+          </div>
+        </div>
+        <div class="media-icons">
+          <a  class="icon"><i class="far fa-grin-stars"></i></a>
+          <a  class="icon"><i class="far fa-grin-stars"></i></a>
+          <a  class="icon"><i class="far fa-grin-stars"></i></a>
+          <a  class="icon"><i class="far fa-grin-stars"></i></a>
+        </div>
+      </div>
+    </section>
+    <section class="sec-02">
+      <div class="container">
+        <h3 class="section-title">Our home planet</h3>
+        <div class="content">
+          <div class="image">
+            <img src="images/sear2.jpg" alt="">
+          </div>
+          <div class="info">
+            <h4 class="info-title">Description</h4>
+            <p>With a radius of 3,959 miles (6,371 kilometers), Earth is the biggest 
+                of the terrestrial planets and the fifth largest planet overall.
+                From an average distance of 93 million miles (150 million kilometers), 
+                Earth is exactly one astronomical unit away from the Sun because one 
+                astronomical unit (abbreviated as AU), is the distance from the Sun 
+                 Earth. This unit provides an easy way to quickly compare planets' distances from the Sun.
+                It takes about eight minutes for light from the Sun to reach our planet. <br>
+                When the solar system settled into its current layout about 4.5 billion years ago,
+                 Earth formed when gravity pulled swirling gas and dust in to become the third planet from the Sun. 
+                Like its fellow terrestrial planets, Earth has a central core, a rocky mantle, and a solid crust.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec-03">
+      <div class="container">
+        <h3 class="section-title">Facts about Earth</h3>
+        <div class="content">
+          <div class="media-info">
+            <li><a ><i class="far fa-star"></i>The Earth’s rotation is gradually slowing.</a></li>
+            <li><a ><i class="far fa-star"></i> The Earth was once believed to be the centre of the universe.</a></li>
+            <li><a ><i class="far fa-star"></i> Earth has a powerful magnetic field.</a></li>
+            <li><a ><i class="far fa-star"></i> There is only one natural satellite of the planet Earth.</a></li>
+            <li><a ><i class="far fa-star"></i> Earth is the only planet not named after a god.</a></li>
+          </div>
+          <div class="image">
+            <img src="images/sear5.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      //common reveal options to create reveal animations
+      ScrollReveal({
+        //reset: true,
+        distance: '60px',
+        duration: 2500,
+        delay: 400
+      });
+
+      //target elements, and specify options to create reveal animations
+      ScrollReveal().reveal('.main-title, .section-title', { delay: 500, origin: 'left' });
+      ScrollReveal().reveal('.sec-01 .image, .info', { delay: 600, origin: 'bottom' });
+      ScrollReveal().reveal('.text-box', { delay: 700, origin: 'right' });
+      ScrollReveal().reveal('.media-icons i', { delay: 500, origin: 'bottom', interval: 200 });
+      ScrollReveal().reveal('.sec-02 .image, .sec-03 .image', { delay: 500, origin: 'top' });
+      ScrollReveal().reveal('.media-info li', { delay: 500, origin: 'left', interval: 200 });
+    </script>
+
+  </body>
+</html>
+      

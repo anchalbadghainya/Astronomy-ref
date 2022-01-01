@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jupiter</title>
+    <link rel="stylesheet" href="splanets.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+
+    <section class="sec-01">
+      <div class="container">
+        <h2 class="main-title">Jupiter</h2>
+        <div class="content">
+          <div class="image">
+            <img src="images/sjup1.jpg" alt="">
+          </div>
+          <div class="text-box">
+            <h3>Overview</h3>
+            <p>Jupiter has a long history of surprising scientists – all the way back to 1610 
+                when Galileo Galilei found the first moons beyond Earth. 
+                That discovery changed the way we see the universe. <br>
+                Fifth in line from the Sun, Jupiter is, by far, the largest planet in the solar system 
+                – more than twice as massive as all the other planets combined.</p>
+          </div>
+        </div>
+        <div class="media-icons">
+          <a  class="icon"><i class="far fa-grin-stars"></i></a>
+          <a  class="icon"><i class="far fa-grin-stars"></i></a>
+          <a  class="icon"><i class="far fa-grin-stars"></i></a>
+          <a  class="icon"><i class="far fa-grin-stars"></i></a>
+        </div>
+      </div>
+    </section>
+    <section class="sec-02">
+      <div class="container">
+        <h3 class="section-title">The largest planet in our solar system</h3>
+        <div class="content">
+          <div class="image">
+            <img src="images/sjup3.jpg" alt="">
+          </div>
+          <div class="info">
+            <h4 class="info-title">Description</h4>
+            <p>Jupiter is the largest planet in the solar system and is the fifth planet out
+                 from the Sun. It is two and a half times more massive than all the other planets 
+                in the solar system combined. It is made primarily of gases and is therefore known as a “gas giant”. <br>
+                This was around the 7th or 8th century BC. Jupiter is named after the king of the Roman gods. To the Greeks, 
+                it represented Zeus, the god of thunder. The Mesopotamians saw Jupiter as the god Marduk and patron of the
+                 city of Babylon. Germanic tribes saw this planet as Donar, or Thor.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec-03">
+      <div class="container">
+        <h3 class="section-title">Facts about Jupiter</h3>
+        <div class="content">
+          <div class="media-info">
+            <li><a ><i class="far fa-star"></i> jupiter is the fourth brightest object in the solar system.</a></li>
+            <li><a ><i class="far fa-star"></i> Jupiter has the shortest day of all the planets.</a></li>
+            <li><a ><i class="far fa-star"></i> Jupiter orbits the Sun once every 11.8 Earth years.</a></li>
+            <li><a ><i class="far fa-star"></i> The Great Red Spot is a huge storm on Jupiter.</a></li>
+            <li><a ><i class="far fa-star"></i> Jupiter’s moon Ganymede is the largest moon in the solar system.</a></li>
+          </div>
+          <div class="image">
+            <img src="images/sjup5.jfif" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      //common reveal options to create reveal animations
+      ScrollReveal({
+        //reset: true,
+        distance: '60px',
+        duration: 2500,
+        delay: 400
+      });
+
+      //target elements, and specify options to create reveal animations
+      ScrollReveal().reveal('.main-title, .section-title', { delay: 500, origin: 'left' });
+      ScrollReveal().reveal('.sec-01 .image, .info', { delay: 600, origin: 'bottom' });
+      ScrollReveal().reveal('.text-box', { delay: 700, origin: 'right' });
+      ScrollReveal().reveal('.media-icons i', { delay: 500, origin: 'bottom', interval: 200 });
+      ScrollReveal().reveal('.sec-02 .image, .sec-03 .image', { delay: 500, origin: 'top' });
+      ScrollReveal().reveal('.media-info li', { delay: 500, origin: 'left', interval: 200 });
+    </script>
+
+  </body>
+</html>
+      
